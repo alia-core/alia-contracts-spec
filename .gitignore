@@ -1,0 +1,10 @@
+out/
+cache/
+broadcast/
+.env
+.env.local
+.keys/
+node_modules/
+lib/
+*.swp
+.DS_Store
