@@ -8,3 +8,11 @@ node_modules/
 lib/
 *.swp
 .DS_Store
+
+# npm + TypeScript artifacts
+node_modules/
+dist/
+typechain/
+abi/
+*.tsbuildinfo
+.npmrc

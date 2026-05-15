@@ -61,3 +61,13 @@ AGIL are trademarks of Avvatar Labs SAS.
 ## Contact
 
 [avvatar.io](https://avvatar.io)
+
+---
+
+## NPM consumption
+
+Install: npm install @alia/contracts-spec
+
+Import in TypeScript using IScoreEngine__factory, IPillarDMode__factory, IAllocationAdapter__factory from @alia/contracts-spec. See dist/ for compiled types. Contracts live BNB testnet — full addresses on alia.network/docs.
+
+License BUSL-1.1 (Avvatar Labs SAS, change date 2028-06-01 → MIT).

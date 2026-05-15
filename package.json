@@ -1,0 +1,56 @@
+{
+  "name": "@alia/contracts-spec",
+  "version": "0.1.0",
+  "description": "ALIA Quality Network — contract interfaces and ABIs for integration. 12 Solidity interfaces (3 core + 9 adapters) for Score, Allocation, and Pillar D modes consumable on BNB Chain testnet/mainnet.",
+  "license": "BUSL-1.1",
+  "homepage": "https://alia.network",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alia-core/alia-contracts-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alia-core/alia-contracts-spec/issues"
+  },
+  "author": "Avvatar Labs SAS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "abi/",
+    "src/interfaces/",
+    "src/adapters/interfaces/",
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "alia",
+    "alia-quality-network",
+    "defi",
+    "ethereum",
+    "bnb-chain",
+    "agentic",
+    "quality",
+    "pillar-d",
+    "stablecoin",
+    "yield"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "forge build && node scripts/extract-abis.js && npm run typechain && npm run tsc",
+    "typechain": "typechain --target ethers-v6 --out-dir typechain/ 'abi/**/*.json'",
+    "tsc": "tsc",
+    "clean": "rm -rf abi/ typechain/ dist/ out/ cache/",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "peerDependencies": {
+    "ethers": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@typechain/ethers-v6": "^0.5.1",
+    "typechain": "^8.3.2",
+    "ethers": "^6.13.0",
+    "typescript": "^5.5.0"
+  }
+}
