@@ -1,9 +1,9 @@
 {
-  "name": "@alia/contracts-spec",
+  "name": "alia-contracts-spec",
   "version": "0.1.0",
   "description": "ALIA Quality Network — contract interfaces and ABIs for integration. 12 Solidity interfaces (3 core + 9 adapters) for Score, Allocation, and Pillar D modes consumable on BNB Chain testnet/mainnet.",
   "license": "BUSL-1.1",
-  "homepage": "https://alia.network",
+  "homepage": "https://github.com/alia-core/alia-contracts-spec#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alia-core/alia-contracts-spec.git"
